@@ -9,16 +9,30 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Text("🦋")
-            Text("Hello, banana!")
-        }
-        .padding()
-    }
-}
+            TabView {
+          Yyview()
+            .tabItem {
+            Label("Yun Ye ", systemImage: "person")
+            }
 
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
+           Jxview()
+            .tabItem {
+            Label("Jia Xuan", systemImage: "person")
+            }
+
+            Emview()
+            .tabItem {
+            Label("Emily", systemImage: "person")
+            }
+            }
+            
+            
+        }
     }
-}
+
+        struct ContentView_Previews: PreviewProvider {
+            static var previews: some View {
+                ContentView()
+            }
+        }
+    
