@@ -11,7 +11,7 @@ struct Homeview: View {
     var body: some View {
         VStack{
             Text("About us")
-            Text("We are Year Ones from Raffles Girl's School")
+            Text("We are Year Ones from Raffles Girls' School")
         } .font(.title)
             .multilineTextAlignment(.center)
     }
